@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Syafira</title>
+  <!-- Menambahkan Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- Bagian Header Game -->
+    <div class="container-fluid p-0">
+      <header class="text-center">
+      <h1>Avoid the Falling Blocks</h1>
+      </header>
+    </div>
+
+
+    <!-- Bagian About Game -->
+    <div class="container mt-3 p-5" id="about">
+      <h2><strong>About</strong></h2>
+      <p>Selamat datang di <strong>Avoid the Falling Blocks</strong>! Ini adalah permainan yang penuh aksi di mana kamu mengendalikan sebuah kotak biru untuk menghindari kotak merah yang jatuh. Tujuannya sederhana: bertahan selama mungkin tanpa terkena kotak merah!</p>
+      <p>Karaktermu, kotak biru, bisa bergerak ke kiri dan kanan menggunakan tombol panah. Selama permainan, kotak merah akan mulai jatuh dari atas layar, dan tugasmu adalah menghindarinya. Kecepatan permainan akan meningkat seiring bertambahnya skor, membuat permainan semakin menantang.</p>
+      <p>Tetap fokus, hindari kotak merah, dan coba capai skor tertinggi! Seberapa lama kamu bisa bertahan?</p><br>
+      <p>Bisakah kamu mengalahkan skor tertinggi kamu sendiri? Ayo buktikan!</p>
+    </div>
+
+     <!-- Bagian start Game -->
+      <div class="container mb-4 text-center" id="play">
+      <h2><strong>Play Demo</strong></h2>
+      <canvas id="gameCanvas" width="900" height="500" class="border"></canvas>
+      <p id="scoreDisplay" class="mt-2">Skor: 0</p>
+      <button onclick="startGame()" class="btn btn-primary mt-3">Mulai Permainan</button>
+      </div>
+
+     <!-- Bagian how To  -->
+    <section class="container">
+      <h2><strong>How to Play</strong></h2>
+      <p>1.Gunakan tombol atau klik tombol</p>
+      <p>2.Gunakan tombol panah kiri (◀️) untuk menggerakkan karakter ke kiri.</p>
+      <p>3.Gunakan tombol panah kanan (▶️) untuk menggerakkan karakter ke kanan.</p>
+      <p>4.Hindari blok yang jatuh Jika terkena, maka game over.</p>
+      <p>5.Ulangi lagi samapi kamu berada di skor tertinggi !!!</p>
+    </section>
+
+    <!-- Bagian Credit -->
+<div class="container" id="credit">
+  <h2><strong>Credit By</strong></h2>
+  <p>Dibuat oleh: <strong>Syafira Azahra Br.Ginting </strong> menggunakan HTML, CSS & JavaScript, bootstrap</p>
+</div>
+
+<!-- Bagian Footer -->
+<footer class="text-center p-3 mt-5" style="width: 100vw; margin: 0;">
+  <p>Thank you all player</p>
+  <p>Have Funn Guysss, Good Luck !!</p>
+</footer>
+
+  <!-- Menambahkan Bootstrap JS dan dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
