@@ -32,14 +32,15 @@
       <h2><strong>Play Demo</strong></h2>
       <canvas id="gameCanvas" width="900" height="500" class="border"></canvas>
       <p id="scoreDisplay" class="mt-2">Skor: 0</p>
+
+       <!-- Pindahkan tombol kontrol ke sini -->
+      <div id="controls" class="my-3">
+      <button onclick="moveLeft()">◀</button>
+      <button onclick="moveRight()">▶</button>
+      </div>
+  
       <button onclick="startGame()" class="btn btn-primary mt-3">Mulai Permainan</button>
       </div>
-
-      <!-- Bagian tombol kanan kiri -->
-      <div id="controls">
-       <button onclick="moveLeft()">◀</button>
-       <button onclick="moveRight()">▶</button>
-     </div>
   
 
      <!-- Bagian how To  -->
