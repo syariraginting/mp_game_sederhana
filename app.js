@@ -25,6 +25,18 @@ const canvas = document.getElementById("gameCanvas");
     }
   }
 
+   function moveLeft() {
+  if (player.x > 0) {
+    player.x -= 20;
+  }
+}
+
+function moveRight() {
+  if (player.x < canvas.width - player.width) {
+    player.x += 20;
+  }
+}
+
   function createBlock() {
     let x = Math.random() * (canvas.width - 30);
     blocks.push({ x: x, y: 0, width: 30, height: 30 });
