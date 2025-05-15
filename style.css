@@ -35,4 +35,17 @@ h2{
      color:#533B4D;
      font-weight: bold;
 }
-   
+
+#controls {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  font-size: 2rem;
+  padding: 10px 20px;
+}
