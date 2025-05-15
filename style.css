@@ -36,10 +36,15 @@ h2{
      font-weight: bold;
 }
 
+
 #controls {
+  position: fixed;
+  bottom: 100px; /* atau 120px biar lebih tinggi dari footer */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
   gap: 30px;
+  z-index: 9999;
 }
 
 #controls button {
@@ -50,8 +55,3 @@ h2{
   color: white;
   border: none;
 }
-
-#controls button:active {
-  background-color: #0056b3;
-}
-
